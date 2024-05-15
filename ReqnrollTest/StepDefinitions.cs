@@ -1,5 +1,4 @@
-﻿using TechTalk.SpecFlow;
-using TechTalk.SpecFlow.Assist;
+﻿using Reqnroll;
 
 namespace ReqnrollTest;
 

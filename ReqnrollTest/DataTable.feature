@@ -2,6 +2,11 @@
 
 A short summary of the feature
 
+Scenario: Data Table example
+	Then the data should be
+	| Id | Value   |
+	| 1  | Charlie |
+
 Scenario: Data Table can have a comment trailing its definition
 	Then the data should be
 	| Id | Value   |
@@ -11,3 +16,8 @@ Scenario: Data Table can have a comment trailing its definition with a Note head
 	Then the data should be
 	| Id | Value   | Notes
 	| 1  | Charlie | Initial Value
+
+Scenario: Data Table test fails with an extra column
+	Then the data should be
+	| Id | Value   | Notes         |
+	| 1  | Charlie | Initial Value |
