@@ -110,6 +110,9 @@ this.ScenarioInitialize(scenarioInfo);
                 table1.AddRow(new string[] {
                             "1",
                             "Charlie"});
+                table1.AddRow(new string[] {
+                            "2",
+                            "Bob"});
 #line 6
  await testRunner.ThenAsync("the data should be", ((string)(null)), table1, "Then ");
 #line hidden
@@ -125,7 +128,7 @@ this.ScenarioInitialize(scenarioInfo);
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             Reqnroll.ScenarioInfo scenarioInfo = new Reqnroll.ScenarioInfo("Data Table can have a comment trailing its definition", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 10
+#line 11
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -141,7 +144,10 @@ this.ScenarioInitialize(scenarioInfo);
                 table2.AddRow(new string[] {
                             "1",
                             "Charlie"});
-#line 11
+                table2.AddRow(new string[] {
+                            "2",
+                            "Bob"});
+#line 12
  await testRunner.ThenAsync("the data should be", ((string)(null)), table2, "Then ");
 #line hidden
             }
@@ -156,7 +162,7 @@ this.ScenarioInitialize(scenarioInfo);
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             Reqnroll.ScenarioInfo scenarioInfo = new Reqnroll.ScenarioInfo("Data Table can have a comment trailing its definition with a Note header", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 15
+#line 17
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -172,7 +178,10 @@ this.ScenarioInitialize(scenarioInfo);
                 table3.AddRow(new string[] {
                             "1",
                             "Charlie"});
-#line 16
+                table3.AddRow(new string[] {
+                            "2",
+                            "Bob"});
+#line 18
  await testRunner.ThenAsync("the data should be", ((string)(null)), table3, "Then ");
 #line hidden
             }
@@ -187,7 +196,7 @@ this.ScenarioInitialize(scenarioInfo);
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             Reqnroll.ScenarioInfo scenarioInfo = new Reqnroll.ScenarioInfo("Data Table test fails with an extra column", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 20
+#line 23
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -205,7 +214,11 @@ this.ScenarioInitialize(scenarioInfo);
                             "1",
                             "Charlie",
                             "Initial Value"});
-#line 21
+                table4.AddRow(new string[] {
+                            "2",
+                            "Bob",
+                            ""});
+#line 24
  await testRunner.ThenAsync("the data should be", ((string)(null)), table4, "Then ");
 #line hidden
             }

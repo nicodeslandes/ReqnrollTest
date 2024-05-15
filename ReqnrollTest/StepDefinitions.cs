@@ -10,7 +10,8 @@ public partial class StepDefinitions
     {
         var data = new[]
         {
-            new{ Id = 1, Value = "Charlie" }
+            new{ Id = 1, Value = "Charlie" },
+            new{ Id = 2, Value = "Bob" },
         };
 
         table.CompareToSet(data);
