@@ -3,7 +3,7 @@
 namespace ReqnrollTest;
 
 [Binding]
-public partial class StepDefinitions
+public class StepDefinitions
 {
     [Then(@"the data should be")]
     public void ThenTheDataShouldBe(Table table)

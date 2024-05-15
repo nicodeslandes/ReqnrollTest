@@ -15,4 +15,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="DataTable.feature" />
+  </ItemGroup>
+
 </Project>
