@@ -8,13 +8,23 @@ public class StepDefinitions
     [Then(@"the data should be")]
     public void ThenTheDataShouldBe(Table table)
     {
-        var data = new[]
+        var data = new List<Entry>();
+
+        for (var i = 0; i < 2; i++)
         {
-            new{ Id = 1, Value = "Charlie" },
-            new{ Id = 2, Value = "Bob" },
+            if (i == 0)
+            {
+                data.Add(new(1, "Charlie"));
+            }
+            else
+            {
+                data.Add(new(2, "Bob"));
+            }
         };
 
         table.CompareToSet(data);
     }
 
 }
+
+public record Entry(int Id, string Value);
